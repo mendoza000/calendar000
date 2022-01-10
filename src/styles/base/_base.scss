@@ -1,0 +1,20 @@
+*{
+  padding: 0px;
+  margin: 0px;
+}
+
+html{
+  font-size: 10px;
+}
+
+html,
+body{
+  font-family: $font-text;
+  background-color: $primary;
+  color: $color-text;
+}
+
+body{
+  font-size: 1.6rem;
+}
+

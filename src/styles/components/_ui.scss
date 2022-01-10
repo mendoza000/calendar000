@@ -1,0 +1,17 @@
+.ui__return-btn{
+	border: none;
+	padding: 0.1rem 0.7rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	fill: $secondary;
+	background-color: transparent;
+	position: absolute;
+	top: 2rem;
+	left: 1rem;
+
+	box-icon{
+		width: 3.8rem;
+		height: 3.8rem;
+	}
+}
