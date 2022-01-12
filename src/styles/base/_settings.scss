@@ -3,8 +3,10 @@ $font-text: 'Open Sans', sans-serif;
 $font-title: "";
 
 $primary: #072227;
-$primary-l: lighten($primary, 10);
-$primary-xl: lighten($primary, 20);
+$primary-l: lighten($primary, 5);
+$primary-xl: lighten($primary, 10);
+$primary-o: darken($primary, 1.5);
+$primary-xo: darken($primary, 2);
 
 $secondary: #4FBDBA;
 $secondary-l: lighten($secondary, 10);
@@ -14,3 +16,5 @@ $secondary-xo: darken($secondary, 20);
 $color-text: #e6fffe;
 $color-text-o: #8d9e9e;
 $color-text-xo: #536363;
+
+$error: #eb135e;

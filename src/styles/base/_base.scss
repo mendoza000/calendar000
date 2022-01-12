@@ -18,3 +18,15 @@ body{
   font-size: 1.6rem;
 }
 
+body::-webkit-scrollbar {
+    width: 5px;     /* Tamaño del scroll en vertical */
+    height: 3px;    /* Tamaño del scroll en horizontal */
+}
+body::-webkit-scrollbar-thumb {
+    background-color: $secondary;
+    border-radius: 50px;
+    transition: background-color 0.5s;
+}
+body::-webkit-scrollbar-thumb:active {
+    background-color: $secondary-o;
+}
