@@ -59,3 +59,30 @@
 		fill: $primary;
 	}
 }
+
+.ui__fab{
+	border: none;
+	outline: none;
+	position: fixed;
+	bottom: 1.2rem;
+	right: 1.2rem;
+	width: 5rem;
+	height: 5rem;
+	z-index: 50;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	background-color: $secondary;
+	box-shadow: 5px 5px 15px -4px rgba(0, 0, 0, 0.6);
+	transition: background-color .3s;
+
+	box-icon{
+		height: 3rem;
+		width: 3rem;
+	}
+
+	&:hover{
+		background-color: $secondary-o;
+	}
+}

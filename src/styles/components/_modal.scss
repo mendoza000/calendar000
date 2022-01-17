@@ -1,0 +1,263 @@
+/* Modal */
+.ReactModalPortal > div{
+    opacity: 0;
+}
+
+.ReactModalPortal .ReactModal__Overlay {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    transition: opacity .2s ease-in-out;
+    z-index: 999;
+}
+
+.modal-fondo {
+    background-color: rgba(0, 0, 0, 0.7);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    position: fixed;
+}
+
+.ReactModalPortal .ReactModal__Overlay--after-open {
+    opacity: 1;
+}
+
+.ReactModalPortal .ReactModal__Overlay--before-close {
+    opacity: 0;
+}
+
+.modal {
+    background: $primary-l;
+    border-radius: 5px;
+    color: $color-text;
+    display: inline;
+    max-height: 55.5rem;
+    max-width: 49rem;
+    outline: none;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    // align-items: center;
+}
+
+.modal__title{
+    margin-top: -1rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    letter-spacing: 0.4rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-icon{
+        fill: $secondary;
+        width: 3.5rem;
+        height: 3.5rem;
+        margin-right: 0.4rem;
+    } 
+}
+
+.modal__form-group{
+    font-family: inherit;
+    label{
+        font-size: 1.6rem;
+    }
+    small{
+        color: $color-text-o !important;
+    }
+    input,
+    textarea{
+        margin-top: 0.5rem;
+        margin-bottom: 1rem;
+        font-size: 1.6rem;
+        background-color: transparent;
+        border: none;
+        box-shadow: 0px 0px 0px 2.5px $primary-xl;
+        color: $color-text !important;
+        resize: none;
+
+        &:focus{
+            background-color: transparent;
+            box-shadow: 0px 0px 0px 2.5px $secondary,
+                        0px 0px 15px -4px $secondary-o;
+        }
+
+        &::placeholder{
+            color: $color-text-o;
+        }
+    }
+
+}
+
+.modal__form-error{
+    box-shadow: 0px 0px 0px 2.5px $error,
+                0px 0px 15px -4px $error !important;
+}
+
+.modal__btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    border: none;
+    width: 15rem;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 1rem 0;
+    margin-top: 1rem;
+    border-radius: 10px;
+    font-size: 1.6rem;
+    background-color: transparent;
+    color: $secondary;
+    box-shadow: 0px 0px 0px 2.5px $secondary;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    transition: background-color .3s, color .3s;
+
+    box-icon{
+        fill: $secondary;
+        margin-right: 0.3rem;
+        transition: fill .3s;
+    }
+
+    &:hover{
+        background-color: $secondary;
+        color: $primary;
+
+        box-icon {
+            fill: $primary;
+        }
+    }
+}  
+
+.react-datetime-picker{
+    outline: none !important;
+    border: none !important;
+    background-color: transparent;
+    color: $color-text-o;
+    font-size: 1.6rem;
+    box-shadow: 0px 0px 0px 2.5px $primary-xl;
+    margin-bottom: 1rem;
+
+    input{
+        color: $color-text-o;
+        &:focus{
+            outline: none;
+        } 
+    }
+
+    &:focus{
+        background-color: transparent;
+        box-shadow: 0px 0px 0px 2.5px $secondary,
+                    0px 0px 15px -4px $secondary-o;
+    }
+}
+.react-datetime-picker__wrapper{
+    border: none !important;
+}
+.react-datetime-picker__button{
+    svg{
+        stroke: $secondary;
+        transition: stroke .3s;
+    }
+}
+
+.react-calendar{
+    background-color: $primary-o !important;
+    border: none !important;
+    border-radius: 10px;
+    color: $color-text;
+}
+
+.react-calendar__navigation__arrow{
+    color: $secondary;
+    transition: background-color .3s, color .3s;
+
+    &:first-child{
+        border-top-left-radius: 10px;
+    }
+    &:last-child{
+        border-top-right-radius: 10px;
+    }
+
+    &:hover, &:focus{
+        background-color: $primary-l !important;
+    }
+    &:disabled{
+        background-color: $primary !important;
+    }
+}
+.react-calendar__navigation__label{
+    color: $color-text;
+    transition: background-color .3s, color .3s;
+    &:hover, &:focus{
+        background-color: $primary-l !important;
+    }
+}
+
+.react-calendar__month-view__days__day{
+    color: $color-text;
+    transition: background-color .2s;
+
+    &:hover{
+        background-color: $primary-l !important;
+    }
+    &:disabled{
+        background-color: $primary !important;
+    }
+}
+.react-calendar__month-view__days__day--neighboringMonth{
+    background-color: $primary !important;
+}
+.react-calendar__month-view__days__day--weekend{
+    color: $secondary !important;
+}
+.react-calendar__decade-view__years__year,
+.react-calendar__year-view__months__month{
+    color: $color-text;
+    transition: background-color .3s;
+
+    &:hover, &:focus{
+        background-color: $primary-l !important;
+    }
+
+    &:disabled{
+        background-color: $primary !important;
+    }
+}
+.react-calendar__tile--hasActive{
+    background-color: $primary-l !important;
+}
+
+.react-datetime-picker__clock{
+    background-color: $primary !important;
+    border: none !important;
+    border-radius: 10px;
+}
+.react-clock__face{
+    border-color: $color-text !important;
+}
+.react-clock__mark__body,{
+    background-color: $color-text !important;
+}
+
+.react-calendar__navigation__label{
+    background-color: $primary-o !important;
+}
+
+.react-calendar__century-view__decades__decade{
+    color: $color-text;
+    transition: background-color .3s;
+
+    &:hover{
+        background-color: $primary-l !important;
+    }
+
+    &:disabled{
+        background-color: $primary !important;
+    }
+}

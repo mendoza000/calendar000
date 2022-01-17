@@ -4,6 +4,7 @@ import {
   Switch,
   Route
  } from 'react-router-dom';
+import { Toaster } from 'react-hot-toast';
 import { AuthRouter } from './AuthRouter';
 import { CalendarRouter } from './CalendarRouter';
 
@@ -25,6 +26,11 @@ export const AppRouter = () => {
 
         </Switch>
       </Router>
+
+      <Toaster
+        position="bottom-center"
+        reverseOrder={false}
+      />
     </>
   )
 }
