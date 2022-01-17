@@ -113,6 +113,14 @@ export const CalendarModal = () => {
 			className="modal"
 			overlayClassName="modal-fondo"
 		>
+
+		<button
+			className="modal__btn-close"
+			onClick={closeModal}
+		>
+			<box-icon name="x"></box-icon>
+		</button>
+
 		<h1 className="modal__title"> 
 			<box-icon name='calendar-event'></box-icon>
 			Nuevo evento 
